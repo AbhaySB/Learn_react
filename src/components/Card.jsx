@@ -27,12 +27,12 @@ export default function Card(props) {
           <li class="list-group-item">{props.weight}kg</li>
         </ul>
         <br />
-        <a href="#" class="btn btn-success mx-1 border border-dark">
+        <button class="btn btn-success mx-1 border border-dark">
           BUY NOW
-        </a>
-        <a href="#" class="btn btn-primary border border-dark">
+        </button>
+        <button onClick={() => props.show(props.name,props.to)} class="btn btn-primary border border-dark">
           View Details
-        </a>
+        </button>
       </div>
     </div>
   );
