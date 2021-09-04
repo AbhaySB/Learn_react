@@ -10,9 +10,9 @@ function App() {
       <Nav />
       <br />
       <div className="container">
-        <div className="rounded-pill p-3 mb-2 bg-light text-dark fst-italic fs-6 ">
+        <div className="rounded-pill p-3 mb-2 bg-secondary text-light fst-italic text-uppercase fw-bold text-center">
           We brings a complete range of bikes in India. Search bikes by applying
-          filters such as by price range, and more features.
+          filters such as by price range, and more features
         </div>
       </div>
       <Cards />
