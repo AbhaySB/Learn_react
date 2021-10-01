@@ -7,9 +7,10 @@ import { useState } from "react";
 
 function App() {
   const [page, setPage] = useState(true);
+  const [dark, toogleDark] = useState(false)
   return (
-    <div>
-      <Nav />
+    <div id="abhay" className={dark&&("dark")}>
+      <Nav dark={dark}/>
       <br />
       { page ? <BikePage /> : <BlogPage/>}
     </div>

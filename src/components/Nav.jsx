@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Nav() {
+export default function Nav({dark}) {
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class={"navbar navbar-expand-lg "+ ((dark)?"navbar-dark bg-dark":"navbar-light bg-light")}>
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           BikersPoint
@@ -61,16 +61,6 @@ export default function Nav() {
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-              >
-                Disabled
-              </a>
             </li>
           </ul>
           <form class="d-flex">
